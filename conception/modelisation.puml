@@ -1,4 +1,7 @@
 @startuml
+
+title Un utilisateur
+
 class Utilisateur {
     id: intèdjeur
     login: chêne
