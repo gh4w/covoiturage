@@ -1,0 +1,8 @@
+@startuml
+class Utilisateur {
+    id: intèdjeur
+    login: chêne
+}
+@enduml
+
+

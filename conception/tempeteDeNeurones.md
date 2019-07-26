@@ -8,8 +8,8 @@ covoitureur:
     - EstEmmenePar(covoitureur, trajet){ pointsGagne--; covoitureur.pointsGagne++}
 
 # le gars y roule pas, il a pas de voiture
-passager:
 
+passager:
     - sous
     - EstEmmenePar(covoitureur, trajet){sous-=...; covoitureur.sous+=...}
     - donneLesSousA(covoitureur, somme)
