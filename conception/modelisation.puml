@@ -3,8 +3,8 @@
 title Un utilisateur
 
 class Utilisateur {
-    id: intèdjeur
-    login: chêne
+    id: int
+    login: string
 }
 @enduml
 
