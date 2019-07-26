@@ -7,15 +7,11 @@ class Utilisateur {
     login: string
 }
 
-note left: le login de l'utilisateur, éventuellement un pseudo
-
 class Personne {
     id: int
     nom: string
     prenom: string
 }
-
-note left: plus d'infos sur l'utilisateur loggué, genre son num de tel ? enfin osef pour l'instant
 
 class Vehicule {
     id: int
