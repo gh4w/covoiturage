@@ -2,7 +2,7 @@
 
 ## test de gravizo.com
 
-![maudailes](https://g.gravizo.com/source/svg?https://raw.githubusercontent.com/gh4w/covoiturage/master/conception/modelisation.puml)
+![maudailes](./uml/modelisation.svg)
 
 ## coloration syntaxique, ça marche ?
 
