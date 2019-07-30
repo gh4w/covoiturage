@@ -1,20 +1,21 @@
 @startuml
 
-title Un utilisateur
+title 
 
-class Utilisateur {
-    id: int
-    login: string
+class Patate {
+    variete: string
+    usage: string
 }
 
 class Personne {
     id: int
     nom: string
     prenom: string
+    patate: Patate
 }
 
-class Vehicule {
-    id: int
+class Caillou {
+    cher: boolean
 }
 
 
