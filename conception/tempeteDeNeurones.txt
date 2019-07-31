@@ -1,25 +1,28 @@
 # une personne pour un trajet. y roule, il a des points. il est emmene, y donne des points.
 covoitureur:
-pointsGagne
 sous
 Emmene(list passager, trajet){ covoitureurs.chaqun(EstEmmenePar(this, trajet))}
-EstEmmenePar(covoitureur, trajet){ pointsGagne--; covoitureur.pointsGagne++}
-
-#le gars y roule pas, il a pas de voiture
-passager:
-sous
 EstEmmenePar(covoitureur, trajet){sous-=...; covoitureur.sous+=...}
 donneLesSousA(covoitureur, somme)
+aUneVoiture=True
+
+#le gars y roule pas, il a pas de voiture
+passager(covoitureur):
+aUneVoiture=False
 
 #le trajet entre deux villes
-#le covoitureur qui roule entre deux autres ville il existe meme pas ici
 trajet:
 km
-prixAuKm(non on s en fout)
+
+covoiturage:
 tousLesCovoitureurs
-tousLesVoyages
 quiEstLeProchainQuiRoule(covoitureurs)
-solderLesComptes()
+
+contexteSocioEconomique:
+prixAuKm
+litreAuCent
+prixAuLitre
+participationPourUnVoyage
 
 #des fois que y en a un qui reste sur place, on separe l aller et le retour
 voyage:
@@ -30,4 +33,3 @@ voyageAlleRetour:
 prixDuVoyage
 voyage alle => alle.prixDuVoyage = prixDuVoyage / 2
 voyage retour => retour.prixDuVoyage = prixDuVoyage / 2
-
