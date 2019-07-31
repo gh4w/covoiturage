@@ -19,5 +19,5 @@ class covoitureur:
             return True
    
     """tu as payé tes dettes dans la vie en vrai et pour de vrai tu l'as juré sur ta vie"""
-    def Paye(sefl, lui, argent):
+    def Paye(self, lui, argent):
         self.__sous, lui.__sous = self.__sous - argent, lui.__sous + argent
