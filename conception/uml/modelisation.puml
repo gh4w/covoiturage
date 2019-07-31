@@ -1,0 +1,24 @@
+@startuml
+
+title c'est bien de mettre un titre
+
+class Patate {
+    variete: string
+    usage: string
+}
+
+class Personne {
+    id: int
+    nom: string
+    prenom: string
+    patate: Patate
+}
+
+class Caillou {
+    cher: boolean
+}
+
+
+@enduml
+
+
