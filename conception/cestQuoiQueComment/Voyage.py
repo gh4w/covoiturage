@@ -1,19 +1,17 @@
 import Covoitureur
 
-"""c'est partit pour le road trip"""
 class Voyage:
-    _covoitureurs
-    _trajet
+"""c'est partit pour le road trip"""
 
     def __init__(self, covoitureurs, trajet):
-        _covoitureurs = covoitureurs
-        _trajet = trajet
+        self._covoitureurs = covoitureurs
+        self._trajet = trajet
 
-    """ Choisir qui roule parmis les covoitureurs."""
     def qui_roule(self, covoitureurs = _covoitureurs):
+        """ Choisir qui roule parmis les covoitureurs."""
         minimumDeSous = min(c.Tirelire for c in covoitureurs if c.)
         return next(c for c in covoitureurs if c.Tirelire = minimumDeSous)
 
-    """Le voyage est effectué, on fait les comptes"""
     def voyager(self, conducteur, covoitureurs, trajet = _trajet):
+        """Le voyage est effectué, on fait les comptes"""
         conducteur.Emmene(covoitureurs, trajet)

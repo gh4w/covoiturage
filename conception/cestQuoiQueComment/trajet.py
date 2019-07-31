@@ -1,23 +1,22 @@
 import contexteSocioEconomique
 
-"""du point A au point B"""
 class Trajet:
-    _contexteSocioEconomique
-    km=120 #km allé retour
-    participation=1/3
+"""du point A au point B"""
 
-    """ctor"""
     def __init__(self, contexteSocioEconomique):
+        """ctor"""
         self._contexteSocioEconomique = contexteSocioEconomique
+        self.km = 120
+        self.participation=1/3
 
-    """ Combien tu paye pour être transporté sur ce voyage."""
     def cout(self):
+        """ Combien tu paye pour être transporté sur ce voyage."""
         return self.cout_total() * self.participation
 
-    """ Combien ça coute en vrai, un voyage, dans notre contexte socio economique."""
     def cout_total(self):
+        """ Combien ça coute en vrai, un voyage, dans notre contexte socio economique."""
         return self._contexteSocioEconomique.prixAuKm * self.km
 
-    """ En fait on a décidé des sous que doit donner un passager pour un voyage."""
     def redefinir_la_participation(self, cout):
+        """ En fait on a décidé des sous que doit donner un passager pour un voyage."""
         self.participation = self.cout_total() / cout
