@@ -9,9 +9,9 @@ class Voyage:
 
     def qui_roule(self, covoitureurs):
         """ Choisir qui roule parmis les covoitureurs."""
-        minimumDeSous = min(c.Tirelire for c in covoitureurs if c.a_une_voiture)
-        return next(c for c in covoitureurs if c.Tirelire == minimumDeSous)
+        minimumDeSous = min(c.tirelire for c in covoitureurs if c.a_une_voiture)
+        return next(c for c in covoitureurs if c.tirelire == minimumDeSous)
 
     def voyager(self, conducteur, covoitureurs, trajet):
         """Le voyage est effectué, on fait les comptes"""
-        conducteur.Emmene(covoitureurs, trajet)
+        conducteur.emmene(covoitureurs, trajet)

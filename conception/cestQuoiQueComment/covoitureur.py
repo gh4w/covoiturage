@@ -9,9 +9,9 @@ class Covoitureur:
         self._sous=0 #initialise à 0
         self.a_une_voiture=True #sinon t'es même pas un covoitureur
 
-    def estEmmenePar(self, lui, trajet):
+    def estEmmenePar(self, conducteur, trajet):
         """tu dors, tu es berçé, tu es emmené par lui, ton covoitureur"""
-        Lui.paye(self, trajet.cout()) # c'est pareil que s'il te payait en vrai
+        self.paye(conducteur, trajet.cout()) # c'est pareil que s'il te payait en vrai
 
     def emmene(self, passagers, trajet):
         """plus t'emmene de gens, plus c'est rentable car plus il y de personnes qui vont te rendre 'la pareil' ou te donner de l'argent en vrai de la vie en vrai."""
