@@ -1,7 +1,7 @@
-import contexteSocioEconomique
+import ContexteSocioEconomique
 
 class Trajet:
-"""du point A au point B"""
+    """du point A au point B"""
 
     def __init__(self, contexteSocioEconomique):
         """ctor"""
