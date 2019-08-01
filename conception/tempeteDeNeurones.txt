@@ -1,0 +1,35 @@
+# une personne pour un trajet. y roule, il a des points. il est emmene, y donne des points.
+covoitureur:
+sous
+Emmene(list passager, trajet){ covoitureurs.chaqun(EstEmmenePar(this, trajet))}
+EstEmmenePar(covoitureur, trajet){sous-=...; covoitureur.sous+=...}
+donneLesSousA(covoitureur, somme)
+aUneVoiture=True
+
+#le gars y roule pas, il a pas de voiture
+passager(covoitureur):
+aUneVoiture=False
+
+#le trajet entre deux villes
+trajet:
+km
+
+covoiturage:
+tousLesCovoitureurs
+quiEstLeProchainQuiRoule(covoitureurs)
+
+contexteSocioEconomique:
+prixAuKm
+litreAuCent
+prixAuLitre
+participationPourUnVoyage
+
+#des fois que y en a un qui reste sur place, on separe l aller et le retour
+voyage:
+points = 0.5 ou 1
+prixDuVoyage
+
+voyageAlleRetour:
+prixDuVoyage
+voyage alle => alle.prixDuVoyage = prixDuVoyage / 2
+voyage retour => retour.prixDuVoyage = prixDuVoyage / 2
