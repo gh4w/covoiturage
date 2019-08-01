@@ -2,7 +2,7 @@
 
 title c'est bien de mettre un titre
 
-class Patate {
+class Carotte {
     variete: string
     usage: string
 }
@@ -20,5 +20,4 @@ class Caillou {
 
 
 @enduml
-
 
