@@ -1,0 +1,14 @@
+@startuml
+
+class Lieu {
+    libelle: string
+}
+
+class Itineraire {
+    depart: Lieu
+    arrivee: Lieu
+    date_depart: DateTime
+}
+
+
+@enduml

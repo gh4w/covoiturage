@@ -18,6 +18,21 @@ class Caillou {
     cher: boolean
 }
 
+class Perroquet {
+    cher: boolean
+}
+
+class Carbone {
+    cher: boolean
+}
+
+class Ragondin {
+    cher: boolean
+}
+
+Carbone <|-- Personne
+Perroquet --> Carotte
+Carbone --> Caillou
+Carbone --> Ragondin
 
 @enduml
-
