@@ -27,8 +27,15 @@ def exemple():
     t = Trajet()
     t.itineraire = i
     t.date_depart = "28/8/2019"
-    t.heure_depart_prevue = "7h30"
+    t.heure_depart = "7h30"
     t.conducteur = "daniel"
     t.passagers = ["luc", "jules"]
 
 ```
+
+@startuml
+class Toto {
+    titi: int,
+    toto: string
+}
+@enduml
