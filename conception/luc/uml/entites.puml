@@ -1,0 +1,9 @@
+@startuml
+
+class Utilisateur {
+    id: int
+    login: string
+    avatar: octets
+}
+
+@enduml
