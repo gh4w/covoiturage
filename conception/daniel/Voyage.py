@@ -1,4 +1,3 @@
-import Covoitureur
 
 class Voyage:
     """c'est partit pour le road trip"""
@@ -7,11 +6,11 @@ class Voyage:
         self._covoitureurs = covoitureurs
         self._trajet = trajet
 
-    def qui_roule(self, covoitureurs):
+    def qui_roule(self):
         """ Choisir qui roule parmis les covoitureurs."""
-        minimumDeSous = min(c.tirelire for c in covoitureurs if c.a_une_voiture)
-        return next(c for c in covoitureurs if c.tirelire == minimumDeSous)
+        minimumDeSous = min(c._sous for c in self._covoitureurs if c.a_une_voiture)
+        return next(c for c in self._covoitureurs if c.tirelire() == minimumDeSous)
 
-    def voyager(self, conducteur, covoitureurs, trajet):
+    def voyager(self, conducteur):
         """Le voyage est effectué, on fait les comptes"""
-        conducteur.emmene(covoitureurs, trajet)
+        conducteur.emmene(self._covoitureurs, self._trajet)
