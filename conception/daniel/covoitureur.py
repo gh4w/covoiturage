@@ -20,11 +20,11 @@ class Covoitureur:
 
         for passager in passagers:
             passager.estEmmenePar(self,trajet)
-            return True
    
     def paye(self, lui, argent):
         """tu as payé tes dettes dans la vie en vrai et pour de vrai tu l'as juré sur ta vie"""
-        self._sous, lui._sous = self._sous - argent, lui._sous + argent
+        self._sous = self._sous - argent
+        lui._sous = lui._sous + argent
 
     def say_my_name(self):
         """ On reconaitra la réference au boxeur célèbre j'espère."""
