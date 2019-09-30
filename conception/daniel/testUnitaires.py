@@ -1,8 +1,8 @@
 # coding: utf-8
-from trajet import Trajet
-from voyage import Voyage
-from contexteSocioEconomique import ContexteSocioEconomique
-from covoitureur import Covoitureur
+from covoiturage.trajet import Trajet
+from covoiturage.voyage import Voyage
+from covoiturage.contexteSocioEconomique import ContexteSocioEconomique
+from covoiturage.covoitureur import Covoitureur
 
 def sumary(covoitureurs):
     return ' | '.join(f"{c.say_my_name()} : {c.tirelire()}" for c in covoitureurs)
