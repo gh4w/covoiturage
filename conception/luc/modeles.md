@@ -1,8 +1,8 @@
 # modèles
 
-## test du formattage
+## test de gravizo.com
 
-![maudailes](./test_plantuml.svg)
+![maudailes](./uml/modelisation.svg)
 
 ## coloration syntaxique, ça marche ?
 
