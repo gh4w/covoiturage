@@ -4,7 +4,7 @@
 
 import unittest
 
-import context
+from . import context
 from covoiturage.trajet import Trajet
 from covoiturage.voyage import Voyage
 from covoiturage.contexteSocioEconomique import ContexteSocioEconomique
