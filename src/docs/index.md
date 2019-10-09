@@ -12,3 +12,4 @@
     ```ps1
     ./env/Scripts/Activate.ps1
     ```
+4. TODO: requirements.txt
