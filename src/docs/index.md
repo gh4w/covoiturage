@@ -12,4 +12,8 @@
     ```ps1
     ./env/Scripts/Activate.ps1
     ```
-4. TODO: requirements.txt
+4. Installer les dépendances
+    ```ps1
+    pip install -r ./src/requirements.txt
+    
+    ```
