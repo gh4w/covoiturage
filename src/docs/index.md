@@ -17,3 +17,7 @@
     pip install -r ./src/requirements.txt
     
     ```
+## Liens
+
+tuto django: https://docs.djangoproject.com/en/2.2/intro/tutorial01/
+tuto django-rest: https://www.django-rest-framework.org/tutorial/quickstart/
