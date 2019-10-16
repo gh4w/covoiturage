@@ -15,7 +15,6 @@
 4. Installer les dépendances
     ```ps1
     pip install -r ./src/requirements.txt
-    
     ```
 ## Liens
 
