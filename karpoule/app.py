@@ -19,7 +19,7 @@ def reponse():
 
 @app.route('/')
 def index():
-    return "<h1>Bienvenue dans Karpoule ! </h1>"
+    return "<h1>Bienvenue dans Karpoule !</h1>"
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
