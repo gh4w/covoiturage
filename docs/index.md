@@ -19,5 +19,5 @@
     ```
 ## Liens
 
-tuto django: https://docs.djangoproject.com/en/2.2/intro/tutorial01/
-tuto django-rest: https://www.django-rest-framework.org/tutorial/quickstart/
+flask: http://flask.palletsprojects.com/en/1.1.x/
+flask: mise en place des tests: http://flask.palletsprojects.com/en/1.1.x/testing/
