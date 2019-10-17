@@ -1,5 +1,4 @@
 import functools
-import pdb
 
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
@@ -44,7 +43,7 @@ def login():
         user = db.execute('select * from user where username = ?', (username, )).fetchone()
 
         if user is None:
-            error = "username incorrect"
+            error = "nom d'utilisateur incorrect"
         elif not check_password_hash(user['password'], password):
             error = "mot de passe incorrect"
 
@@ -54,8 +53,8 @@ def login():
             return redirect(url_for('index'))
         else:
             flash(error)
-    else:
-        return render_template("auth/login.html")
+
+    return render_template("auth/login.html")
 
 # nb: cette fonction sera appelée avant chaque requête, 
 # même si la requête ne concerne pas ce blueprint.
