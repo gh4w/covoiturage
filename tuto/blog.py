@@ -1,7 +1,7 @@
 from flask import Blueprint, flash, g, redirect, render_template, request, session, url_for
 from werkzeug.exceptions import abort
-from karpoule.auth import login_required
-from karpoule.db import get_db
+from tuto.auth import login_required
+from tuto.db import get_db
 
 bp = Blueprint('blog', __name__)
 

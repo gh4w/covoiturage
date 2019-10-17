@@ -1,1 +1,1 @@
-web: gunicorn karpoule.app:app
+web: gunicorn tuto.app:app
