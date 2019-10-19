@@ -1,1 +1,1 @@
-web: gunicorn "tuto:create_app()"
+web: gunicorn tuto:create_app()
