@@ -35,3 +35,8 @@ flask run
 git push heroku master
 ```
 
+## TODO
+
+- logs en dev et en prod: flask -> gunicorn -> heroku
+- flask & heroku: déployer une bdd
+
