@@ -28,3 +28,10 @@ $env:FLASK_APP="tuto.app:app"
 $env:FLASK_ENV="development"
 flask run
 ```
+
+## déployer sur heroku:
+
+```ps1
+git push heroku master
+```
+
