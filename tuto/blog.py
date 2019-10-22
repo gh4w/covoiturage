@@ -55,7 +55,7 @@ def create():
             db.execute('insert into post (title, body, author_id) values (?, ?, ?)', (title, body, g.user['id']))
             db.commit()
             return redirect(url_for('blog.index'))
-    else:
+
         return render_template('blog/create.html')
 
 @bp.route('/<int:id>/update',  methods=('GET', 'POST'))
@@ -77,7 +77,7 @@ def update(id):
             db.execute('update post set title = ?, body = ? where id = ?', (title, body, id))
             db.commit()
             return redirect(url_for('blog.index'))
-    else:
+
         return render_template('blog/update.html', post=post)
         
 @bp.route('/<int:id>/delete',  methods=('GET', 'POST'))
