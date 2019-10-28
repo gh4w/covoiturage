@@ -1,0 +1,4 @@
+include tuto/schema.sql
+graft tuto/static
+graft tuto/templates
+global exclude *.pyc
