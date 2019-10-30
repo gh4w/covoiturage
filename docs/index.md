@@ -24,7 +24,7 @@ flask: mise en place des tests: http://flask.palletsprojects.com/en/1.1.x/testin
 ## lancer le serveur de dev en local:
 
 ```ps1
-$env:FLASK_APP="tuto.app:app"
+$env:FLASK_APP="karpoule"
 $env:FLASK_ENV="development"
 flask run
 ```
